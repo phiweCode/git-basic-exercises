@@ -1,0 +1,1729 @@
+    1  ls
+    2  nano ~/.zshrc
+    3  zsh
+    4  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    5  nano ~/.zshrc
+    6  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    7  nano ~/.zshrc
+    8  exit
+    9  zsh
+   10  echo $path 
+   11  exit 
+   12  exit
+   13  ls
+   14  clear
+   15  ls
+   16  clear
+   17  pwd
+   18  cd 
+   19  ls
+   20  cd ..
+   21  ls
+   22  cd .. 
+   23  ls
+   24  cd mnt 
+   25  cd c
+   26  ld
+   27  ls
+   28  cd users
+   29  ls
+   30  cd Desktop 
+   31  ls
+   32  cd tsmng
+   33  clear
+   34  ls
+   35  cd Desktop 
+   36  ls
+   37  cd todo
+   38  ls
+   39  npx create-react-app todo_frontend
+   40  npx create-react-app todo_frontend .
+   41  npm install -g npm@10.0.0 
+   42  sudo npm install -g npm@10.0.0 
+   43  ls
+   44  code . 
+   45  ls
+   46  cd .. 
+   47  ls
+   48  which home
+   49  which /home
+   50  which root
+   51  cd ..
+   52  cd 
+   53  ls
+   54  cd ..
+   55  ld
+   56  ls
+   57  pwd
+   58  cd /home
+   59  ls
+   60  cd ~
+   61  ls
+   62  mv todo /home/~
+   63  sudo mv todo /home/~
+   64  ls
+   65  cd todo
+   66  ls
+   67  django-admin
+   68  source .env/bin/activate
+   69  django-admin
+   70  clear
+   71  wget
+   72  wget --version 
+   73  md5sum
+   74  m
+   75  md5sum -v
+   76  md5sum --help
+   77  clear
+   78  git clone https://github.com/facebookresearch/llama.githttps://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   79  git clone https://github.com/facebookresearch/llama.githttps://github.com/facebookresearch/llama.githttps://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   80  git clone https://github.com/facebookresearch/llama.git
+   81  ls
+   82  cd llama
+   83  ls
+   84  ./download.sh 
+   85  sudo apt-get install libstdc++-12-dev
+   86  clear
+   87  ls
+   88  clea
+   89  clear
+   90  ls
+   91  cd .. 
+   92  ls
+   93  cd.. 
+   94  ls
+   95  cd .. 
+   96  ls
+   97  clear
+   98  ls
+   99  cd mnt  
+  100  ls  
+  101  cd c 
+  102  ls
+  103  sudo ls
+  104  cd Users 
+  105  ls
+  106  clear
+  107  cd tsmng 
+  108  ls
+  109  cd Desktop  
+  110  ls
+  111  cd Llama_2 
+  112  ;s
+  113  md5sum --help
+  114  sudo apt update 
+  115  apt list --upgradable
+  116  sudo apt update && sudo apt upgrade
+  117  ls
+  118  cd llama
+  119  ls
+  120  cd llama-2-7b
+  121  ls
+  122  cd ..
+  123  conda -v
+  124  conda --version
+  125  OpenCL-SDK
+  126  ls 
+  127  source .env/bin/activate
+  128  clear
+  129  ls
+  130  python3 manage.py makemigrations 
+  131  python3 manage.py migrate 
+  132  ython3 manage.py runserver 
+  133  python3 manage.py runserver 
+  134  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  135  django-admin
+  136  python3 manage.py createsuperuser
+  137  python3 manage.py runserver 
+  138  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  139  python3 manage.py runserver 
+  140  su 
+  141  sudo su
+  142  bsjfbvsbfv
+  143  cler
+  144  clear
+  145  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  146  python3 
+  147  python3 manage.py makemigrations 
+  148  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  149  python3 manage.py makemigrations 
+  150  from . import models
+  151  cd todo_backend
+  152  ls
+  153  python3 models.py 
+  154  python3 
+  155  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  156  pwd
+  157  cd todo_backend
+  158  pwd
+  159  python3 
+  160  python3 manage.py migrate  
+  161  cd ..
+  162  python3 manage.py migrate  
+  163  python3 manage.py runserver 
+  164  from django.db import models\nfrom datetime import datetime\nimport os\n\n# Create your models here.\n\nclass Todo(models.Model):\n\n    id = models.AutoField(primary_key=True)\n    title = models.CharField(max_length=100, blank=False)\n    description = models.CharField(max_length=500, blank=True)\n    start_date = models.DateTimeField(default=datetime.now)\n    end_date = models.DateTimeField()\n    completed = models.BooleanField(default=False)\n    created_at = models.DateTimeField(auto_now_add=True )\n    updated_at = models.DateTimeField(auto_now=True )\n\n    def __str__(self):\n\n        return f"{self.title} \n, {self.description} \n, {self.start_date} \n,{self.end_date}, {self.completed} \n, {self.created_at} \n, {self.updated_at} \n"\n\n\nclass Note(models.Model):\n\n    id = models.AutoField(primary_key=True)\n    title = models.CharField(max_length=500, blank=False)\n    body = models.CharField(max_length=500, blank=True)\n    created_at = models.DateTimeField(auto_now_add=True )\n    updated_at = models.DateTimeField(auto_now=True )\n\n    def __str__(self):\n\n        return f"{self.title} \n, {self.body} \n, {self.created_at} \n, {self.updated_at} \n"\n\n\n\n\n
+  165  pw
+  166  pwd
+  167  which .emv
+  168  which .env
+  169  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  170  python3 manage.py runserver 
+  171  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  172  python3 manage.py makemigrations 
+  173  python3 manage.py migrate   
+  174  python3 
+  175  cls
+  176  python3 manage.py runserver  
+  177  echo "# Todo_list" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/phiweCode/Todo_list.git\ngit push -u origin main
+  178  git init
+  179  git add README.md
+  180  git commit -m "First commit" 
+  181  git config --global user.mail "thabo.s.mngoma@gmail.com" 
+  182  git config --global user.maname "phiweCode" 
+  183  git commit -m "First commit" 
+  184  git config --global user.mail "thabo.s.mngoma@gmail.com" 
+  185  git config --global user.maname "phiweCode" 
+  186  git commit -m "First commit" 
+  187  ls
+  188  clear
+  189  git branch -M main
+  190  git remote add origin https://github.com/phiweCode/Todo_list.git
+  191  git commit -m "first commit"
+  192  git remote add origin https://github.com/phiweCode/Todo_list.git
+  193  git push -u origin main
+  194  git branch\n
+  195  git checkout -b main\n
+  196  git branch\n
+  197  git commit -m "first commit"
+  198  git push -u origin main
+  199  git checkout -b main\n
+  200  git checkout \n
+  201  git init
+  202  ls
+  203  la .
+  204  git add README.md
+  205  git commit -m "first commit"
+  206  git config --global user.name "phiweCode"\ngit config --global user.email "thabo.s.mngoma@gmail.com" \n
+  207  git commit -m "first commit"
+  208  git branch -M main
+  209  git remote add origin https://github.com/phiweCode/Todo_list.git
+  210  git push -u origin main
+  211  git status
+  212  git add .
+  213  git status
+  214  git commit -m "I was developing this project locally but I figured it would best to document my development on github" 
+  215  git push 
+  216  ls
+  217  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  218  python3 manage.py runserver   
+  219  pythin3 manage.py runserver 
+  220  python3 manage.py runserver 
+  221  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  222  python3 manage.py runserver 
+  223  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  224  git status 
+  225  git add .
+  226  git status
+  227  git commit -m "I have implement the full crud operations for the Todo and Note model" 
+  228  git push 
+  229  git fetch
+  230  pythin3 manage.py makemigrations 
+  231  python3 manage.py makemigrations 
+  232  python3 manage.py migrate 
+  233  git status
+  234  git push 
+  235  clear
+  236  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  237  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate 
+  238  python3 manage.py runserver 
+  239  python3 manage.py makemigrations  
+  240  python3 manage.py migrate 
+  241  python3 manage.py makemigrations  
+  242  python3 manage.py migrate 
+  243  python3 manage.py makemigrations  
+  244  python3 manage.py migrate 
+  245  python3 manage.py makemigrations  
+  246  python3 manage.py migrate 
+  247  python3 manage.py makemigrations  
+  248  python3 manage.py migrate 
+  249  python manage.py migrate auth zero
+  250  python3 manage.py migrate auth zero
+  251  python manage.py migrate auth
+  252  find . -path "*/migrations/*.py" -not -name "__init__.py" -delete
+  253  find . -path "*/migrations/*.pyc"  -delete
+  254  python3 manage.py makemigrations  
+  255  python manage.py makemigrations \npython manage.py migrate
+  256  python3 manage.py migrate   
+  257  ls
+  258  python3 manage.py migrate
+  259  python3 manage.py makemigrations 
+  260  pip uninstall django\npip install django\n
+  261  pip uninstall django
+  262  pip install django
+  263  python -m pip install --upgrade pip\n
+  264  python3 -v
+  265  python3 --version
+  266  ls
+  267  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate 
+  268  git checkout -b main 
+  269  gut status 
+  270  clear
+  271  git status 
+  272  python3 manage.py makemigrations  
+  273  pip uninstall django 
+  274  sudo apt-get install python3-distutils
+  275  pip uninstall django 
+  276  pi install django
+  277  pip install django
+  278  ls
+  279  pythin3 manage.py makemigrations  
+  280  python3 manage.py makemigrations  
+  281  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate 
+  282  python3 manage.py makemigrations  
+  283  python3 manage.py migrate 
+  284  python3 manage.py runserver
+  285  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  286  python3 manage.py runserver
+  287  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  288  python3 manage.py makemigrations   
+  289  pwd
+  290  clear
+  291  ls
+  292  cd templates 
+  293  la
+  294  ls
+  295  cd ..
+  296  ls
+  297  cd djangoProject1 
+  298  la
+  299  python manage.py startapp accounts
+  300  python3 manage.py startapp accounts
+  301  cd ..
+  302  python3 manage.py startapp accounts
+  303  source $pwd
+  304  pwd
+  305  virtualenv venv 
+  306  exit
+  307  python3 
+  308  ls
+  309  cd ..
+  310  ls
+  311  cd .. 
+  312  ;s
+  313  ls
+  314  cd /PycharmProjects
+  315  cd PycharmProjects
+  316  ls
+  317  cd djangoProject 
+  318  ls
+  319  cd djangoProject 
+  320  python3 manage.py startapp accounts
+  321  python3 --version
+  322  python3 
+  323  python3 manage.py startapp accounts 
+  324  cd ..
+  325  python3 manage.py startapp accounts 
+  326  ls
+  327  source venv/bin/activate
+  328  ls
+  329  cd venv 
+  330  ls
+  331  cd ..
+  332  source venv/scripts/activate
+  333  ls
+  334  python3 manage.py startapp accounts 
+  335  cd venv/Scripts
+  336  ls
+  337  activate
+  338  cd ..
+  339  deactivate
+  340  source venv/scripts/activate
+  341  python3 manage.py startapp accounts 
+  342  python3 -v
+  343  source venv/scripts/activate
+  344  pip install django 
+  345  python3 manage.py startapp accounts  
+  346  pip list
+  347  echo $PYTHONPATH\n
+  348  ls
+  349  source venv/scripts/activate
+  350  pip 
+  351  sudo apt install python3-pip
+  352  pip install django
+  353  ls
+  354  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  355  ls
+  356  cd ..
+  357  ls
+  358  cd todo
+  359  ls
+  360  la .
+  361  cd .env
+  362  ls
+  363  cd bin
+  364  activate 
+  365  /activate
+  366  ls
+  367  activate
+  368  cd ..
+  369  's\n'
+  370  ;
+  371  source .env/bin/activate 
+  372  ls
+  373  python3 manage.py runserver
+  374  source /mnt/c/users/tsmng/Desktop/todo/.env/bin/activate
+  375  whomai
+  376  createsuperuser 
+  377  python3 manage.py createsuperuser 
+  378  python3 manage.py makemigrations    
+  379  python3 manage.py migrate 
+  380  python3 manage.py createsuperuser  
+  381  python3 manage.py makemigrations     
+  382  python3 manage.py migrate 
+  383  python3 manage.py createsuperuser  
+  384  python3 manage.py makemigrations     
+  385  python3 manage.py migrate 
+  386  python3 manage.py runserver
+  387  python3 manage.py makemigrations     
+  388  LS
+  389  ls
+  390  clear
+  391  cd Desktop  
+  392  ls
+  393  mkdir git
+  394  cd git 
+  395  ls
+  396  clear
+  397  ls
+  398  git status 
+  399  git remote add origin https://github.com/phiweCode/alx-low_level_programming.githttps://github.com/phiweCode/Todo_list.git
+  400  git init
+  401  git checkout -b main 
+  402  git remote add origin https://github.com/phiweCode/alx-low_level_programming.githttps://github.com/phiweCode/Todo_list.git
+  403  ls
+  404  git status
+  405  git fetch
+  406  ls
+  407  git clone https://github.com/phiweCode/alx-low_level_programming.git
+  408  ls
+  409  git fetch
+  410  git status
+  411  cd alx-low_level_programming/git 
+  412  cd alx-low_level_programming
+  413  ls
+  414  git status
+  415  git rm -r *
+  416  git status
+  417  git commit -m "removed everything" 
+  418  git push origin main 
+  419  l
+  420  git fetch
+  421  git merge 
+  422  git push origin main 
+  423  git push 
+  424  python3 manage.py makemigrations     
+  425  cd .. 
+  426  ls
+  427  rm -r todo
+  428  ls
+  429  cd .. 
+  430  cd .
+  431  ls
+  432  cd .. 
+  433  clear
+  434  ls
+  435  cd mnt  
+  436  cd c 
+  437  ls
+  438  cd users 
+  439  clear
+  440  ls
+  441  cd tsmng 
+  442  ls
+  443  clear
+  444  ls
+  445  cd Desktop  
+  446  ls
+  447  mkdir coding_projects
+  448  cd coding_projects 
+  449  ls
+  450  mkdir todo_app
+  451  cd todo_app 
+  452  ls
+  453  virtualenv venv 
+  454  sudo apt upgrade 
+  455  sudo install virtualenv 
+  456  pip install --upgrade pip 
+  457  pip install virtualenv 
+  458  virtualenv .env 
+  459  virtualenv --version 
+  460  which virtualenv
+  461  export PATH='$PATH:/home/siphiwe/.local/bin'
+  462  virtualenv --version 
+  463  ls
+  464  clear
+  465  virtualenv .env 
+  466  ls
+  467  la . 
+  468  ls
+  469  cd todo_app 
+  470  cd /
+  471  ls
+  472  cd mnt/c/users/tsmng/Desktop/todo_app 
+  473  ;s
+  474  cd mnt/c/users/tsmng/Desktop/coding_projects 
+  475  ls
+  476  cd todo_app 
+  477  ls
+  478  la / 
+  479  la .
+  480  clear
+  481  cd .env 
+  482  ls
+  483  cd .. 
+  484  ls
+  485  clear
+  486  ls
+  487  clear
+  488  source .env/bin/activate 
+  489  clear
+  490  ls
+  491  clear
+  492  git clone https://github.com/phiweCode/Todo_list.git
+  493  ls
+  494  rm -r Todo_list 
+  495  ls
+  496  rmdir Todo_list 
+  497  cd Todo_list
+  498  ;s
+  499  ld
+  500  c;ear
+  501  clear
+  502  ls
+  503  rm README.md
+  504  ls
+  505  clear
+  506  cd ..
+  507  ld
+  508  ls
+  509  clear
+  510  ls
+  511  rm -r Todo_list 
+  512  ls
+  513  l
+  514  git init 
+  515  git checkout -b main 
+  516  git init 
+  517  ;s
+  518  ls
+  519  rm -r .git
+  520  clear
+  521  ls
+  522  git init 
+  523  git checkout -b main 
+  524  git remote add origin https://github.com/phiweCode/Todo_list.git
+  525  ls
+  526  clear
+  527  git status 
+  528  ls
+  529  echo > test.txt
+  530  ls
+  531  git add /
+  532  git add .
+  533  git commit -m "first commit: \n"
+  534  git push  
+  535  ls
+  536  git fetch
+  537  git merge 
+  538  ls
+  539  clear
+  540  git push 
+  541  git push origin main 
+  542  git push --set-upstream origin main 
+  543  git clone https://github.com/phiweCode/Todo_list.git
+  544  git status 
+  545  ls
+  546  cd / 
+  547  ls
+  548  cd mnt/c/users/tsmng/Desktop/coding_projects 
+  549  ls
+  550  cd todo_app 
+  551  ls
+  552  rm -r test.txt
+  553  clear
+  554  ls
+  555  cd Todo_list
+  556  CD ..
+  557  LS
+  558  ls
+  559  cd README.md 
+  560  rm -r README.md
+  561  ls
+  562  clear
+  563  ls
+  564  cd .. 
+  565  ls
+  566  rmdire Todo_list  
+  567  rmdir Todo_list 
+  568  cd Todo_list
+  569  ;s
+  570  l
+  571  rm -r .git 
+  572  cd ..
+  573  ls
+  574  clear
+  575  ls
+  576  rmdir Todo_list 
+  577  ls
+  578  clear
+  579  gh repo clone phiweCode/Todo_list
+  580  git clone https://github.com/phiweCode/Todo_list.git
+  581  git checkout -b main 
+  582  cleear
+  583  clear
+  584  ls
+  585  cd Todo_list
+  586  ls
+  587  rm -r *
+  588  cd .. 
+  589  ls
+  590  rm -r *
+  591  rm -r Todo_list /.git
+  592  y
+  593  cd T
+  594  cd Todo_list
+  595  ls
+  596  rm -r .git
+  597  y
+  598  ls
+  599  l
+  600  CLEAE
+  601  clear
+  602  ls
+  603  git init
+  604  rm -r .git
+  605  clear
+  606  git checkout -b main 
+  607  git init 
+  608  git checkout -b main 
+  609  cleae
+  610  clear
+  611  git remote add origin https://github.com/phiweCode/Todo_list.git
+  612  ls
+  613  echo "# test" >> README.md
+  614  l
+  615  clear
+  616  git status
+  617  git add . 
+  618  git commit -m "Test commit" 
+  619  git push origin main 
+  620  git clone https://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@github.com/phiweCode/Todo_list.git
+  621  cleear
+  622  ls
+  623  cd Todo_list 
+  624  ls
+  625  cat README.md
+  626  clear
+  627  echo "# test commit" >> README.md
+  628  ls
+  629  git status 
+  630  git add . 
+  631  git commit -m "Test commit" 
+  632  git push origin main 
+  633  ls
+  634  code . 
+  635  ls
+  636  clear
+  637  virtualenv .env 
+  638  pip install --upgrade pip 
+  639  pip install virtualenv 
+  640  export PATH='$PATH:/home/siphiwe/.local/bin'
+  641  virtualenv .env 
+  642  source .env/bin/activate 
+  643  ls
+  644  clear
+  645  ls
+  646  clear
+  647  source .env/bin/activate 
+  648  pip install django djangorestframework 
+  649  django --version 
+  650  django-admin 
+  651  clear
+  652  npx create-react-app todo_frontend . 
+  653  django-admin startproject todo_project .
+  654  source .env/bin/activate 
+  655  django-admin startproject todo_project .
+  656  python3 manage.py startapp todo_backend . 
+  657  python3 manage.py startapp todo_backend
+  658  python3 manage.py makemigrations      
+  659  python3 manage.py migrate 
+  660  python3 manage.py createsuperuser  
+  661  python3 manage.py runserver 
+  662  python3 manage.py createsuperuser  
+  663  python3 manage.py runserver 
+  664  python3 manage.py createsuperuser  
+  665  python3 manage.py runserver 
+  666  python3 manage.py createsuperuser  
+  667  python3 manage.py runserver 
+  668  python3 manage.py makemigrations      
+  669  python3 manage.py startapp Todo
+  670  /mnt/c/users/tsmng/Desktop/coding_projects/todo_app/Todo_list/.env/bin/python
+  671  python3 manage.py mak
+  672  python3 manage.py makemigrations       
+  673  clear
+  674  python3 manage.py makemigrations        
+  675  python3 manage.py migrate  
+  676  python3 manage.py makemigrations        
+  677  python3 manage.py runserver 
+  678  python3 manage.py makemigrations        
+  679  source .env/bin/activate 
+  680  python3 manage.py makemigrations        
+  681  cd Todo_list 
+  682  python3 manage.py makemigrations        
+  683  ls
+  684  source .env/bin/activate 
+  685  python3 manage.py makemigrations        
+  686  deactivate
+  687  cd ..
+  688  deactivate
+  689  cd todo_app 
+  690  ls
+  691  cd Todo_list
+  692  ls
+  693  source .env/bin/activate 
+  694  ls
+  695  cd /
+  696  cd mnt/c/users/tsmng/Desktop/coding_projects 
+  697  ls
+  698  cd todo_app 
+  699  code . 
+  700  ls
+  701  cd Todo_list
+  702  source .env/bin/activate 
+  703  python3 manage.py makemigrations        
+  704  python3 manage.py migrate
+  705  python3 manage.py runserver
+  706  python3 manage.py makemigrations        
+  707  cd Todo_list
+  708  python3 manage.py makemigrations        
+  709  python3 manage.py migrate 
+  710  python3 manage.py runserver
+  711  python3 manage.py makemigrations        
+  712  python3 manage.py migrate
+  713  python3 manage.py runserver
+  714  python3 manage.py runserver 
+  715  pws
+  716  pwd
+  717  ls
+  718  cd T
+  719  cd Todo_list
+  720  l
+  721  clear
+  722  ls
+  723  python3 manage.py runserver
+  724  python3 manage.py makemigrations        
+  725  cd Todo_list
+  726  python3 manage.py makemigrations         
+  727  clear
+  728  ls
+  729  clear
+  730  git status 
+  731  cd .. 
+  732  ld
+  733  ls
+  734  pip freeze > requirements.txt
+  735  git add . 
+  736  git status 
+  737  git remove .
+  738  git rm .
+  739  cd Todo_list
+  740  git status 
+  741  git add db.sqlite3 manage.py todo_backend/ todo_project/
+  742  git status
+  743  git commit -m "I have added the rest api for the Todo model and created a custome user model model overriding some common functionality of the default user model" 
+  744  git push origin main 
+  745  python3 manage.py makemigrations         
+  746  cd Todo_list
+  747  python3 manage.py makemigrations         
+  748  cd ..
+  749  pip install django djangorestframework 
+  750  source .env/bin/activate 
+  751  cd Todo_list
+  752  ls
+  753  python3 manage.py makemigrations         
+  754  ls
+  755  lear
+  756  clear
+  757  pip install django djangorestframework 
+  758  python3 manage.py makemigrations         
+  759  python3 manage.py migrate 
+  760  cd Todo_list 
+  761  python3 manage.py runserver
+  762  npx create-react-app todo_frontend . 
+  763  clear
+  764  python3 manage.py runserver
+  765  python3 manage,py runserver 
+  766  cd Todo_list 
+  767  ls
+  768  cleat
+  769  clear
+  770  ls
+  771  python3 manage,py runserver 
+  772  ls
+  773  python3 manage,py runserver 
+  774  python3 manage.py runserver 
+  775  python3 manage.py createsuperuser  
+  776  cd Todo_list 
+  777  python3 manage.py createsuperuser  
+  778  ls
+  779  pip install django-cors-headers 
+  780  npx create-react-app react-complete-guide
+  781  npm start
+  782  cd react-complete-guide 
+  783  npm start 
+  784  ls
+  785  npm start  
+  786  ls
+  787  mv react-complete-guide /home/react-complete-guide
+  788  sudo mv react-complete-guide /home/react-complete-guide
+  789  ls
+  790  cd react-complete-guide 
+  791  ls
+  792  npm start  
+  793  npm update react-scripts\n
+  794  npm start  
+  795  cd todo_frontend
+  796  ls
+  797  cd Todo_list 
+  798  clear
+  799  ls
+  800  cd todo_frontend 
+  801  npm start 
+  802  cd Todo_list 
+  803  cd todo_frontend  
+  804  ls
+  805  npm install --save-dev @babel/plugin-proposal-private-property-in-object\n
+  806  npm audit fix --force
+  807  sudo apt install nodejs
+  808  node -v
+  809  npm start 
+  810  ls
+  811  clear
+  812  l
+  813  rm -r learning_react
+  814  ls
+  815  l
+  816  clear
+  817  cd mnt/c/users/tsmng/Desktop
+  818  cd mnt/c/users/tsmng/Desktop/
+  819  cd mnt/c/users/tsmng
+  820  cd ..
+  821  cd .. 
+  822  ls
+  823  cd mnt/c/users/tsmng/Desktop/
+  824  ls
+  825  clear
+  826  ls
+  827  cd react 
+  828  ls
+  829  clear
+  830  ls
+  831  npx create-react-app  reactapp
+  832  ls
+  833  cd reactapp 
+  834  clear
+  835  code . 
+  836  ls
+  837  npm start 
+  838  ls
+  839  npm start 
+  840  sudo curl -sL https://deb.nodesource.com/setup_18.x | bash -\nsudo apt update\nsudo apt install nodejs
+  841  node -v
+  842  ls
+  843  clear
+  844  npm start  
+  845  npm install webpack webpack-cli webpack-dev-server html-webpack-plugin --save-dev\n
+  846  npx webpack serve\n
+  847  clear
+  848  npm start  
+  849  ls
+  850  code . 
+  851  npx create-react-app  reactapp 
+  852  npm run dev 
+  853  npm run dev
+  854  npm run dev  
+  855  git clone https://github.com/phiweCode/little-lemon-restaurant.git
+  856  clear
+  857  git checkout -b master 
+  858  ls
+  859  rm -r *
+  860  ls
+  861  clear
+  862  git clone https://github.com/phiweCode/little-lemon-restaurant.git
+  863  git clone -b master https://github.com/phiweCode/little-lemon-restaurant.git
+  864  npm start  
+  865  npm create vite@latest 
+  866  npm init create vite@latest 
+  867  npm init create vite@latest .
+  868  git init
+  869  ls
+  870  la
+  871  npm create vite@latest  . 
+  872  npm i
+  873  ls
+  874  la
+  875  git commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/phiweCode/little-lemon-restaurant.git\ngit push -u origin main
+  876  git add .
+  877  git commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/phiweCode/little-lemon-restaurant.git\ngit push -u origin main
+  878  curl https://get.modular.com | sh - && \\nmodular auth mut_54e9bdb079264994b49bab7166f5d047
+  879  modular --hel 
+  880  modular --help 
+  881  modular host-info
+  882  modular --hel 
+  883  modular --help 
+  884  modular config-set
+  885  modular install mojo
+  886  echo 'export MODULAR_HOME="/home/siphiwe/.modular"' >> ~/.zshrc\necho 'export PATH="/home/siphiwe/.modular/pkg/packages.modular.com_mojo/bin:$PATH"' >> ~/.zshrc\nsource ~/.zshrc
+  887  mojo
+  888  code . 
+  889  nm run dev
+  890  npm run dev
+  891  mojo
+  892  npm run dev
+  893  npm run dev 
+  894  ls
+  895  npm run dev
+  896  clear
+  897  ls
+  898  la
+  899  rm -r .git
+  900  ls
+  901  la 
+  902  rmdir .git
+  903  cd .git
+  904  ls
+  905  cd objects
+  906  ls
+  907  cd ..
+  908  cd ... 
+  909  ls
+  910  cd 'react practice' 
+  911  ls
+  912  clear
+  913  ls
+  914  git status 
+  915  ls
+  916  clear
+  917  npm create vite@latest  
+  918  cd "Little lemon" 
+  919  ls
+  920  npm install 
+  921  cd "Little lemon" 
+  922  ls
+  923  clear 
+  924  npm run dev
+  925  ls
+  926  cd "Little lemon" 
+  927  ls
+  928  clear
+  929  ls
+  930  npm run dev
+  931  git status 
+  932  cd "Little lemon" 
+  933  ls
+  934  clear
+  935  code . 
+  936  git status 
+  937  clear
+  938  s
+  939  npm run dev
+  940  git init
+  941  git commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/phiweCode/little-lemon.git\ngit push -u origin main
+  942  git add .
+  943  git commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/phiweCode/little-lemon.git\ngit push -u origin main
+  944  npm install react-router-dom
+  945  npm run dev 
+  946  git add . 
+  947  git commit -m "implemented the page components" 
+  948  git push -u origin main 
+  949  git add . 
+  950  ls
+  951  cd 'Nexified Landing Page' 
+  952  code . 
+  953  npm create vite@latest . 
+  954  ls
+  955  cleae
+  956  clear
+  957  ls
+  958  code .
+  959  npm  install 
+  960  ls
+  961  npm install --global eas-cli && eas init --id df7ec0f3-b4b3-4ad0-a35c-7ecd2c94431d
+  962  npm install --global eas-cli && npx create-expo-app nexified-solutions-landing-page-react && cd nexified-solutions-landing-page-react && eas init --id df7ec0f3-b4b3-4ad0-a35c-7ecd2c94431d
+  963  ls
+  964  cd .. 
+  965  la
+  966  npm install --global eas-cli && npx create-expo-app nexified-solutions-landing-page-react && cd nexified-solutions-landing-page-react && eas init --id df7ec0f3-b4b3-4ad0-a35c-7ecd2c94431d
+  967  clear
+  968  ls
+  969  cd 'Nexified Landing Page'
+  970  ls
+  971  npm run dev
+  972  npm install react-router-dom 
+  973  npm run dev
+  974  clear
+  975  git remote add origin https://gitlab.com/nex5402303/nexifiedsolutions.git\ngit branch -M main\ngit push -uf origin main\n
+  976  clear
+  977  git init 
+  978  git checkout -b main
+  979  clear
+  980  ls
+  981  clear
+  982  git remote add origin https://gitlab.com/nex5402303/nexifiedsolutions.git\ngit branch -M main\ngit push -uf origin main\n
+  983  git remote add origin https://gitlab.com/nex5402303/nexifiedsolutions.git
+  984  clear
+  985  ls
+  986  git status
+  987  git add .
+  988  git commit -m "This is the first commit for nexified lets go"
+  989  git push -uf origin main
+  990  git status
+  991  git push -uf origin main
+  992  git remote add origin https://gitlab.com/nex5402303/nexifiedsolutions.git
+  993  git push -uf origin main
+  994  git push -uf o origin main
+  995  git push -u origin main
+  996  git pull 
+  997  git mergr
+  998  git merge
+  999  git pull origin main
+ 1000  git config pull.rebase false 
+ 1001  git pull origin main
+ 1002  gitt fetch
+ 1003  git fetch
+ 1004  git merge 
+ 1005  git pull origin main
+ 1006  git pull origin main --allow-unrelated-histories
+ 1007  git status
+ 1008  git commit 
+ 1009  git add .
+ 1010  git commit -m "commits after resolving conflicts"
+ 1011  git push -u origin main
+ 1012  npm run dev
+ 1013  git clone -b main https://gitlab.com/nex5402303/nexifiedsolutions.git
+ 1014  npm run dev
+ 1015  git status
+ 1016  git add . 
+ 1017  git commit -m "changed the hero text passage"
+ 1018  git push -u origin main
+ 1019  npm run  dev
+ 1020  npm run dev 
+ 1021  npm run dev
+ 1022  git status 
+ 1023  git add .
+ 1024  git status 
+ 1025  git commit -m "made a lot changes" 
+ 1026  git push
+ 1027  git pull 
+ 1028  git add . 
+ 1029  git commit -m "made a lot changes" 
+ 1030  git push -u origin main
+ 1031  nm run dev
+ 1032  npm run dev
+ 1033  npm run dev  
+ 1034  git status
+ 1035  git add .
+ 1036  git commit -m "Lifted up the state of the booking form" 
+ 1037  git push 
+ 1038  docker ps
+ 1039  choco
+ 1040  docker ps
+ 1041  wsl
+ 1042  docker --version
+ 1043  \n   curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"\n   
+ 1044  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+ 1045  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+ 1046  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ 1047  kubectl version --client
+ 1048  docker --version 
+ 1049  kubectl get pods
+ 1050  docker --version  
+ 1051  kubectl  get pods
+ 1052  npm run dev
+ 1053  cls
+ 1054  pwd 
+ 1055  ls
+ 1056  cd Desktop
+ 1057  ls
+ 1058  mkdir umuzi
+ 1059  ls
+ 1060  cd umuzi 
+ 1061  ls
+ 1062  cd umuzi 
+ 1063  ls
+ 1064  clear
+ 1065  ls
+ 1066  clear
+ 1067  mkdir projects 
+ 1068  ls
+ 1069  clear
+ 1070  ls
+ 1071  cd project
+ 1072  cd projects
+ 1073  clear
+ 1074  ls
+ 1075  clear
+ 1076  git clone -b main git@github.com:Umuzi-org/Thabo-Mngoma-778-contentitem-.git
+ 1077  ls
+ 1078  git@github.com:Umuzi-org/Thabo-Mngoma-778-contentitem-.git
+ 1079  git clone git@github.com:Umuzi-org/Thabo-Mngoma-778-contentitem-.git
+ 1080  git clone https://github.com/Umuzi-org/Thabo-Mngoma-778-contentitem-.git
+ 1081  ls
+ 1082  cd Thabo-Mngoma-778-contentitem-projects
+ 1083  cd Thabo-Mngoma-778-contentitem-projects-
+ 1084  cd Thabo-Mngoma-778-contentitem-Thabo-Mngoma-778-contentitem-projects-
+ 1085  ls
+ 1086  cd Thabo-Mngoma-778-contentitem- 
+ 1087  ls
+ 1088  clear
+ 1089  ls
+ 1090  code . 
+ 1091  git add .
+ 1092  git commit -m "My first commit" 
+ 1093  git push origin main
+ 1094  cd .. 
+ 1095  ls
+ 1096  clear
+ 1097  git clone https://github.com/Umuzi-org/Thabo-Mngoma-429-bootcamp-writing-assignment-.git
+ 1098  ls
+ 1099  cd Thabo-Mngoma-429-bootcamp-writing-assignment-
+ 1100  ls
+ 1101  clear
+ 1102  code . 
+ 1103  git status 
+ 1104  git add .
+ 1105  git commit -m "My first commit" 
+ 1106  git push origin main 
+ 1107  cd ..
+ 1108  s
+ 1109  ls
+ 1110  clear
+ 1111  git clone https://github.com/Umuzi-org/Thabo-Mngoma-756-contentitem-javascript.git
+ 1112  ls
+ 1113  cd Thabo-Mngoma-756-contentitem-javascript
+ 1114  ls
+ 1115  clear
+ 1116  code .
+ 1117  ./task1.js
+ 1118  node task1.js
+ 1119  node ./task1.js
+ 1120  clear
+ 1121  git add .
+ 1122  git commit -m "Task 1 initial attempt"
+ 1123  git push origin main 
+ 1124  node task2.js
+ 1125  clear
+ 1126  git add .
+ 1127  git commit -m "Task 2 initial commit" 
+ 1128  git push origin main 
+ 1129  git add .
+ 1130  git commit -m "Corrected the spelling for exports in module.exports from module.export"
+ 1131  git push origin main 
+ 1132  node task3.js
+ 1133  git add task3.js
+ 1134  git commit -m "Initial attempt for task3" 
+ 1135  git push origin main 
+ 1136  git add .
+ 1137  git commit -m "Fixed the syntax errors from all the reviews" 
+ 1138  git push origin main 
+ 1139  git add .
+ 1140  git commit -m "On task2 is missing a semicolon, task 3 was printing and not returning" 
+ 1141  git push origin main 
+ 1142  node task3.js
+ 1143  node task2.js
+ 1144  clear
+ 1145  git add . 
+ 1146  git commit -m "I refactored the code on task3 and created a default parameter on task2"
+ 1147  git push origin main  
+ 1148  git add .
+ 1149  git commit -m "define the else if for the second condition for odd numbers, use concatenation for the output string" 
+ 1150  cd ..
+ 1151  ls
+ 1152  git clone https://github.com/Umuzi-org/Thabo-Mngoma-764-contentitem-javascript.git
+ 1153  ls
+ 1154  cd Thabo-Mngoma-764-contentitem-javascript
+ 1155  code . 
+ 1156  ls
+ 1157  clear
+ 1158  git add .
+ 1159  git commit -m "Task 2 initial commit"  
+ 1160  git push origin main  
+ 1161  clear
+ 1162  cd ..
+ 1163  ls
+ 1164  git clone https://github.com/Umuzi-org/Thabo-Mngoma-760-contentitem-javascript.git
+ 1165  ls
+ 1166  cd Thabo-Mngoma-760-contentitem-javascript
+ 1167  clear
+ 1168  code .
+ 1169  ls
+ 1170  node task3.js
+ 1171  git add ..
+ 1172  git add . 
+ 1173  git commit -m "Task 3 initial commit"  
+ 1174  git push origin main  
+ 1175  node task2.js 
+ 1176  cd .. 
+ 1177  ls
+ 1178  cd Thabo-Mngoma-764-contentitem-javascript
+ 1179  clear
+ 1180  ls
+ 1181  node task2.js  
+ 1182  clear
+ 1183  git status 
+ 1184  git add .
+ 1185  git commit -m "Added the default parameter" 
+ 1186  git push origin main   
+ 1187  cd ..
+ 1188  clear
+ 1189  git clone https://github.com/Umuzi-org/Thabo-Mngoma-759-contentitem-javascript.git
+ 1190  ls
+ 1191  cd Thabo-Mngoma-759-contentitem-javascript
+ 1192  code .
+ 1193  git add .
+ 1194  git commit -m "Task 4 initial commmit" 
+ 1195  git push origin main    
+ 1196  cd .. 
+ 1197  clear
+ 1198  git clone https://github.com/Umuzi-org/Thabo-Mngoma-763-contentitem-javascript.git
+ 1199  ls
+ 1200  cd Thabo-Mngoma-763-contentitem-javascript
+ 1201  code . 
+ 1202  node task5.js
+ 1203  clear
+ 1204  git status 
+ 1205  git add .
+ 1206  git commit -m "Task 5 initial commit" 
+ 1207  git push origin main 
+ 1208  cd ..
+ 1209  clear
+ 1210  git clone https://github.com/Umuzi-org/Thabo-Mngoma-758-contentitem-javascript.git
+ 1211  ls
+ 1212  cd Thabo-Mngoma-758-contentitem-javascript
+ 1213  clear
+ 1214  ls
+ 1215  clear
+ 1216  code .
+ 1217  node task6.js
+ 1218  ls
+ 1219  node task6.js
+ 1220  clear
+ 1221  git add . 
+ 1222  git commit -m "Task 6 initial commit" 
+ 1223  git push origin main  
+ 1224  clear
+ 1225  cd ..
+ 1226  git clone https://github.com/Umuzi-org/Thabo-Mngoma-765-contentitem-javascript.git
+ 1227  ls
+ 1228  cd Thabo-Mngoma-765-contentitem-javascript
+ 1229  clear
+ 1230  ls
+ 1231  code .
+ 1232  node task7.js
+ 1233  git add .
+ 1234  git commit -m "Task 7 initial commit" 
+ 1235  git push origin main   
+ 1236  cd ..
+ 1237  git clone https://github.com/Umuzi-org/Thabo-Mngoma-762-contentitem-javascript.git
+ 1238  ls
+ 1239  cd Thabo-Mngoma-762-contentitem-javascript
+ 1240  code . 
+ 1241  node task8.js
+ 1242  clear
+ 1243  git add .
+ 1244  git commit -m "task 8 initial commit" 
+ 1245  git push origin main 
+ 1246  node task8.js
+ 1247  git add .
+ 1248  git commit -m "On the while loop the input is now compare to greater or equal to 60 values as opposed to just values greater than 60"" \n"
+ 1249  git push origin main  
+ 1250  cd .. 
+ 1251  git clone https://github.com/Umuzi-org/Thabo-Mngoma-761-contentitem-javascript.git
+ 1252  ls
+ 1253  cd Thabo-Mngoma-761-contentitem-javascript
+ 1254  ls
+ 1255  code . 
+ 1256  ls
+ 1257  node task9.js
+ 1258  git add . 
+ 1259  git commit -m "Task 9 initial commit"
+ 1260  git push origin main   
+ 1261  ls
+ 1262  cd .. 
+ 1263  ls
+ 1264  clear
+ 1265  ls
+ 1266  git clone https://github.com/Umuzi-org/Thabo-Mngoma-754-contentitem-javascript.git
+ 1267  ls
+ 1268  cd Thabo-Mngoma-754-contentitem-javascript
+ 1269  ls
+ 1270  touch task10.js
+ 1271  code . 
+ 1272  node task10.js
+ 1273  clear
+ 1274  node task10.js
+ 1275  clear
+ 1276  node task10.js
+ 1277  clear
+ 1278  node task10.js
+ 1279  clear
+ 1280  node task10.js
+ 1281  git add . 
+ 1282  git commit -m "Task 10 initial commit" 
+ 1283  git push origin main 
+ 1284  node task10.js
+ 1285  clear
+ 1286  node task10.js
+ 1287  git add .
+ 1288  git commit -m "Task 10 redefined the algorithm and did fine tuned string manipulations" 
+ 1289  git push origin main  
+ 1290  clear
+ 1291  cd ..
+ 1292  ls
+ 1293  clear
+ 1294  git clone https://github.com/Umuzi-org/Thabo-Mngoma-394-bash-for-bootcamp-.git
+ 1295  ls
+ 1296  cd Thabo-Mngoma-394-bash-for-bootcamp-
+ 1297  code . 
+ 1298  ls
+ 1299  pwd
+ 1300  cd ..
+ 1301  ;s
+ 1302  la
+ 1303  ls
+ 1304  cd /
+ 1305  ls
+ 1306  clear
+ 1307  ls /
+ 1308  cd Docker 
+ 1309  ls
+ 1310  cd host 
+ 1311  ls
+ 1312  ls . 
+ 1313  cd ..
+ 1314  la
+ 1315  cd ..
+ 1316  git add . 
+ 1317  git commit -m "Task 10 initial commit" 
+ 1318  git push origin main 
+ 1319  npm run dev
+ 1320  cd Desktop 
+ 1321  cd / 
+ 1322  cd /mnt/c/Users/tsmng/Desktop/
+ 1323  touch important.md
+ 1324  ls
+ 1325  cd
+ 1326  ls
+ 1327  cd  /mnt/c/Users/tsmng/Desktop/umuzi/projects
+ 1328  ls
+ 1329  git clone https://github.com/Umuzi-org/Thabo-Mngoma-585-understanding-the-review-column-.git
+ 1330  cd .. 
+ 1331  git clone https://github.com/Umuzi-org/Thabo-Mngoma-585-understanding-the-review-column-.git
+ 1332  la
+ 1333  cd  Thabo-Mngoma-585-understanding-the-review-column-
+ 1334  code . 
+ 1335  git status 
+ 1336  git add .
+ 1337  git commit -m "Initial commit for the 'understanding the review column' task" 
+ 1338  git push origin main  
+ 1339  cd ..
+ 1340  la
+ 1341  git clone https://github.com/Umuzi-org/Thabo-Mngoma-606-tilde-project-tutorial-how-repo-projects-work-.git
+ 1342  git switch phiweCode-patch-1 
+ 1343  git checkout -b phiweCode-patch-1
+ 1344  ls
+ 1345  cd Thabo-Mngoma-606-tilde-project-tutorial-how-repo-projects-work-
+ 1346  ls
+ 1347  git checkout -b phiweCode-patch-1
+ 1348  code . 
+ 1349  git fetch  
+ 1350  git pull 
+ 1351  git pull origin main 
+ 1352  touch important.md 
+ 1353  code . 
+ 1354  ls
+ 1355  code 
+ 1356  git status 
+ 1357  git add . 
+ 1358  git commit -m "Listed the people to make reviews on this PR which should be empty"
+ 1359  git push originn phiweCode-patch-1
+ 1360  git push origin phiweCode-patch-1
+ 1361  git pull origin phiweCode-patch-1main 
+ 1362  git pull origin phiweCode-patch-
+ 1363  git pull origin phiweCode-patch-1
+ 1364  git merge
+ 1365  git config pull.rebase true
+ 1366  git pull origin phiweCode-patch-1
+ 1367  git merge
+ 1368  git push origin phiweCode-patch-1
+ 1369  git merge phiweCode-patch-1
+ 1370  git merge main
+ 1371  cd .. 
+ 1372  clear
+ 1373  git clone https://github.com/Umuzi-org/Thabo-Mngoma-219-level-1-programming-katas-javascript.git
+ 1374  ls 
+ 1375  cd Thabo-Mngoma-219-level-1-programming-katas-javascript 
+ 1376  code . 
+ 1377  ls
+ 1378  git checkout main 
+ 1379  git pull
+ 1380  git checkout -b task/1
+ 1381  ls
+ 1382  node task1.js
+ 1383  git add task1.js
+ 1384  git commit -m "Implemented the multiples function for task 1 requirements" 
+ 1385  git push origin task/1
+ 1386  git pull
+ 1387  git pull origin main 
+ 1388  git checkout -b main  
+ 1389  git checkout main 
+ 1390  clear
+ 1391  ls
+ 1392  git checkout task/a
+ 1393  git checkout task/1
+ 1394  ls
+ 1395  cd .. 
+ 1396  cd Thabo-Mngoma-219-level-1-programming-katas-javascript
+ 1397  clear
+ 1398  git checkout -b task/2
+ 1399  ls
+ 1400  clear
+ 1401  git pull origin main 
+ 1402  touch task2.js
+ 1403  ls
+ 1404  node task2.js
+ 1405  clear
+ 1406  ls
+ 1407  git add task2.js
+ 1408  git commit -m "Implemented the hasThree function for task 2"
+ 1409  git push origin task/2
+ 1410  clear
+ 1411  git checkout main 
+ 1412  ls
+ 1413  clear
+ 1414  git checkout task/1
+ 1415  ls
+ 1416  cd .. 
+ 1417  ls
+ 1418  cd Thabo-Mngoma-219-level-1-programming-katas-javascript 
+ 1419  git checkout task/2
+ 1420  ls
+ 1421  git rm task1.js
+ 1422  ls
+ 1423  git commit -m "removed task 1 from this current branch" 
+ 1424  git push origin task/2
+ 1425  ls
+ 1426  git checkout task/1
+ 1427  ls
+ 1428  git checkout main 
+ 1429  git pull 
+ 1430  git checkout -b task/3
+ 1431  touch task3.js
+ 1432  node task3.js
+ 1433  git add task3.js
+ 1434  git commit -m "Implemented the isSixtyFive function for task 3"
+ 1435  git push origin task/3
+ 1436  ls
+ 1437  git checkout main 
+ 1438  git pull origin main  
+ 1439  git checkout -b task/4
+ 1440  git pull origin main 
+ 1441  touch task4.js
+ 1442  node task4.js
+ 1443  cleear
+ 1444  clear
+ 1445  node task4.js
+ 1446  ls
+ 1447  git add task4.ks
+ 1448  git add task4.js
+ 1449  git commit -m "Implemented the square function for task 4" 
+ 1450  git push origin task/4 
+ 1451  git checkout main 
+ 1452  git pull origin main 
+ 1453  git checkout -b task/5 
+ 1454  touch task5.js
+ 1455  clear
+ 1456  touch task5.js
+ 1457  node task5.js
+ 1458  ls
+ 1459  clear
+ 1460  node task5.js
+ 1461  clear
+ 1462  git add task5.js
+ 1463  git commit -m "Implemented the triangle function for task 5"
+ 1464  git push origin task/5
+ 1465  clear
+ 1466  git checkout main 
+ 1467  clear
+ 1468  git pull 
+ 1469  git checkout -b task/6
+ 1470  clear
+ 1471  touch task6.js
+ 1472  clear
+ 1473  node task6.js
+ 1474  git add task6.js
+ 1475  git commit -m "Implemented the 'longest' function for task 6"
+ 1476  git push origin task/6
+ 1477  git checkout main 
+ 1478  git pull
+ 1479  git checkout -b task/7 
+ 1480  touch task7.js
+ 1481  clear
+ 1482  ls
+ 1483  node task7.js
+ 1484  node task7.js 
+ 1485  git add task7.js
+ 1486  git commit -m "Implemented the combine function for task 7" 
+ 1487  git push origin task/7
+ 1488  git main 
+ 1489  git checkout main 
+ 1490  cd .. 
+ 1491  ls
+ 1492  git clone https://github.com/Umuzi-org/Thabo-Mngoma-223-person-javascript.git
+ 1493  cd Thabo-Mngoma-223-person-javascript
+ 1494  ls
+ 1495  clear
+ 1496  git pull 
+ 1497  git checkout main 
+ 1498  git pull origin main 
+ 1499  code . 
+ 1500  node Person.j
+ 1501  node Person.js
+ 1502  clear
+ 1503  node Person.js
+ 1504  ls
+ 1505  clear
+ 1506  node Person.js
+ 1507  clear
+ 1508  node Person.js
+ 1509  clear
+ 1510  git pull origin main 
+ 1511  git checkout -b personclass
+ 1512  git switch main 
+ 1513  git switch personclass
+ 1514  ls
+ 1515  git add .
+ 1516  ls
+ 1517  git add Person.js
+ 1518  git commit -m "Implemented the Person class for the Person project"
+ 1519  git push origin personclass
+ 1520  cd ..
+ 1521  clear 
+ 1522  mkdir git-basic-exercises 
+ 1523  cd git-basic-exercises 
+ 1524  ls
+ 1525  code . 
+ 1526  ls -a
+ 1527  git inint
+ 1528  git init
+ 1529  ls -a 
+ 1530  git status
+ 1531  touch README.md
+ 1532  ls -a
+ 1533  git status
+ 1534  git log
+ 1535  git add README.md
+ 1536  git status 
+ 1537  git rm README.md
+ 1538  git status 
+ 1539  git commit -m "initial commit"
+ 1540  git log
+ 1541  nano README.m
+ 1542  cat README.md
+ 1543  nano README.m
+ 1544  cat README.md
+ 1545  nano README.m
+ 1546  cat README.md 
+ 1547  git status 
+ 1548  git add README.md
+ 1549  git commit -m "second commit" 
+ 1550  nano README.m 
+ 1551  git add README.md 
+ 1552  git commit -m "third commit" 
+ 1553  ls
+ 1554  rm -r README.m
+ 1555  LS
+ 1556  ls -a 
+ 1557  cat README.md 
+ 1558  nano README.md
+ 1559  cat README.md  
+ 1560  git add README.md 
+ 1561  git commit -m "first commit"
+ 1562  nano README.md
+ 1563  git add README.md 
+ 1564  git commit -m "second commit" 
+ 1565  nano README.md
+ 1566  git add README.md  
+ 1567  git commit -m "third commit" 
+ 1568  git log
+ 1569  git checkout 4e8d6b2409ad65721ec09f969c2732ef58413882-b personclass
+ 1570  git checkout 4e8d6b2409ad65721ec09f969c2732ef58413882
+ 1571  cat README.md  
+ 1572  git checkout main 
+ 1573  git checkout master
+ 1574  git log
+ 1575  git checkout 3ae640f4ab05ec0512620c47fea6bb3e73642dfdmaster
+ 1576  git checkout 3ae640f4ab05ec0512620c47fea6bb3e73642dfd
+ 1577  cat README.md  
+ 1578  clear
+ 1579  git checkout master 
+ 1580  cat README.md   
+ 1581  git branch 
+ 1582  git checkout -b milkshake-flavourspersonclass
+ 1583  git branch
+ 1584  git branch 
+ 1585  nano README.md
+ 1586  git status
+ 1587  git add README.md  
+ 1588  git commit -m "added initial flavours"
+ 1589  git checkout main 
+ 1590  git checkout master 
+ 1591  cat README.md   
+ 1592  git checkout milkshake-flavoursmasterpersonclass
+ 1593  git branch 
+ 1594  git switch milkshake-flavourspersonclass
+ 1595  cat README.md   
+ 1596  git switch master 
+ 1597  git checkout -b history
+ 1598  git log
+ 1599  git branch
+ 1600  history > history.txt
+ 1601  ls
+ 1602  cat history.txt
+ 1603  git commit -m "added history"
+ 1604  git log
+ 1605  git add history.txt
+ 1606  git commit -m "added history"
+ 1607  git log
+ 1608  git branch 
+ 1609  git switch milkshake-flavourspersonclass
+ 1610  git log
+ 1611  nano README.md
+ 1612  git log
+ 1613  git commit "random readme changes"
+ 1614  git add README.md   
+ 1615  git commit "random readme changes"
+ 1616  git commit -m  "random readme changes"
+ 1617  git switch history
+ 1618  cat README.md 
+ 1619  clear
+ 1620  rm README.md 
+ 1621  echo "booya" > README.md
+ 1622  git add README.md 
+ 1623  git commit -m "rewrote readme"
+ 1624  git checkout master 
+ 1625  cat README.md 
+ 1626  LS
+ 1627  ls
+ 1628  git loh
+ 1629  git log
+ 1630  git branch
+ 1631  git checkout milkshake-flavourspersonclass
+ 1632  ls
+ 1633  git log 
+ 1634  git switch history
+ 1635  ls 
+ 1636  git checkout maaster
+ 1637  git checkout master 
+ 1638  git merge milkshake-flavourspersonclassmain
+ 1639  git merge milkshake-flavourspersonclass
+ 1640  clear
+ 1641  ls
+ 1642  git log 
+ 1643  git checkout history 
+ 1644  git log 
+ 1645  git switch milkshake-flavourspersonclasshistory
+ 1646  git switch milkshake-flavourspersonclass
+ 1647  git log 
+ 1648  git checkout history 
+ 1649  git log 
+ 1650  clear
+ 1651  ls
+ 1652  cd .. 
+ 1653  ls
+ 1654  rmdir git-basic-exercises.git
+ 1655  ls
+ 1656  rmdir git-basic-exercises
+ 1657  cd git-basic-exercises
+ 1658  rm r *\\n
+ 1659  rm r *\n
+ 1660  rm r . \n
+ 1661  rm -r . \n
+ 1662  rm -r *\n
+ 1663  ls
+ 1664  la
+ 1665  rm -r .git 
+ 1666  ls
+ 1667  la
+ 1668  rmdir .git
+ 1669  la
+ 1670  clear
+ 1671  ls -a 
+ 1672  git init 
+ 1673  git branch -m main 
+ 1674  clear
+ 1675  ls -a
+ 1676  git status 
+ 1677  clear
+ 1678  touch README.md 
+ 1679  ls
+ 1680  ls -a 
+ 1681  git status  
+ 1682  git log
+ 1683  git add README.md  
+ 1684  git status 
+ 1685  git commit -m "initial commit"
+ 1686  clea
+ 1687  git log 
+ 1688  nano README.md
+ 1689  cat README.md 
+ 1690  git status 
+ 1691  git commit -m "second commit" 
+ 1692  git status 
+ 1693  git add README.md   
+ 1694  git status 
+ 1695  nano README.md
+ 1696  git log
+ 1697  cleat
+ 1698  git log
+ 1699  nano README.md
+ 1700  cat README.md 
+ 1701  git add README.md   
+ 1702  git commit -m "second commit"  
+ 1703  nano README.md 
+ 1704  git add README.md    
+ 1705  git commit -m "third commit"  
+ 1706  git log
+ 1707  git checkout 0e175692779d19dc8f4df2369e60ac0486aeef49history 
+ 1708  git checkout 0e175692779d19dc8f4df2369e60ac0486aeef49
+ 1709  cat README.md 
+ 1710  git checkout main
+ 1711  cat README.md 
+ 1712  git branch 
+ 1713  git checkout -b milkshake-flavours
+ 1714  git branch 
+ 1715  git switch main 
+ 1716  git branch 
+ 1717  git switch milkshake-flavours 
+ 1718  nano milkshakes.md
+ 1719  git status
+ 1720  git add milkshakes.md 
+ 1721  git commit -m "added initial flavours" 
+ 1722  git log
+ 1723  git switch main 
+ 1724  git log
+ 1725  clear
+ 1726  git branch -b history
+ 1727  git checkout -b history
+ 1728  git log
+ 1729  git branch
